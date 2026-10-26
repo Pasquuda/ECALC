@@ -4,8 +4,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 from core import AIRPORTS, GEOD, calculate, make_svg, parse_point
 
-st.set_page_config(page_title="ADACALC PoC", page_icon="🧭", layout="wide")
-st.title("ADACALC · WGS-84")
+st.set_page_config(page_title="ECALC PoC", page_icon="🧭", layout="wide")
+st.title("ECALC · WGS-84")
 st.caption("Прототип расчёта расстояний и азимутов от контрольной точки аэродрома. Не для навигации.")
 
 with st.sidebar:
@@ -41,7 +41,7 @@ if source.strip():
         st.info("Не найдено корректных точек для расчёта.")
     st.subheader("Результаты")
     st.text_area("Расчётный текст", value=result.text, height=220)
-    st.download_button("Скачать TXT", data=result.text.encode("utf-8"), file_name="adacalc-result.txt",
+    st.download_button("Скачать TXT", data=result.text.encode("utf-8"), file_name="ECALC-result.txt",
                        mime="text/plain", disabled=not result.text)
     st.info(f"Топология: {result.topology}")
     with st.expander("Графическая схема", expanded=True):

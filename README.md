@@ -1,4 +1,4 @@
-# ADACALC · Streamlit PoC
+# ECALC · Streamlit PoC
 
 Перенос Colab-инструмента для расчёта азимутов и расстояний в веб-интерфейс Streamlit.
 
