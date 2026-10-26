@@ -1,4 +1,4 @@
-"""Pure calculation layer for the ADACALC proof of concept (WGS-84)."""
+"""Pure calculation layer for the ECALC proof of concept (WGS-84)."""
 from __future__ import annotations
 
 from dataclasses import dataclass
